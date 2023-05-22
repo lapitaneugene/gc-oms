@@ -12,14 +12,6 @@
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
 
-    <header class="headerlogin">
-        <div>
-            <h1>Login</h1>
-        </div>
-        <div class="buttonskie">
-            <input type="submit" value="Sign in" name="login" class="btn btn-info btn-lg text-light my-2 py-3" style="width:20% ; border-radius: 30px; font-weight:600;"/>
-        </div>
-    </header>
 
     <body class="Login">
 
@@ -29,8 +21,8 @@
         <div class="row d-flex align-items-center justify-content-center h-100">
             <div class="col-md-8 col-lg-7 col-xl-6">
             <img src="{{asset('public')}}/css/Login.jpg" class="img-fluid" height="800px" width="900px">
-            <h2>Join us!</h2>
-            <h4>Start believing in your dreams again!</h4>
+            <h2>Start now!</h2>
+            <h4>Believe in your dreams again!</h4>
             </div>
             <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
             <div class="formsss">

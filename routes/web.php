@@ -21,4 +21,4 @@ Route::get('login',[AdminController::class, 'login']);
 Route::get('admin/login',[AdminController::class, 'login']);
 Route::get('admin',[AdminController::class, 'index']);
 Route::post('admin/login',[AdminController::class, 'submit_login']);
-Route::get('admin/register',[AdminController::class, 'register']);
+Route::get('register',[AdminController::class, 'register']);
