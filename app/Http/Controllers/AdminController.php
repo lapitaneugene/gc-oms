@@ -19,13 +19,18 @@ class AdminController extends Controller
 
     // Submit Login
     public function submit_login(Request $request){
-        $request->valdiate([
-            'username' => 'requires',
+        $request->validate([
+            'username' => 'required',
             'password' => 'required'
         ]);
         $checkAdmin = Admin::where(['username'=>$request->username,'password'=>$request->password])->count();
         if ($checkAdmin > 0){
             return redirect('admin');
         }
+    }
+
+    // Register
+    public function register(){
+        return view('register');
     }
 }

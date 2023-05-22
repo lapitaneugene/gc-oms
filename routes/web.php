@@ -17,7 +17,8 @@ use App\Http\Controllers\AdminController;
 Route::get('/', function () {
     return view('welcome');
 }); 
-
+Route::get('login',[AdminController::class, 'login']);
 Route::get('admin/login',[AdminController::class, 'login']);
 Route::get('admin',[AdminController::class, 'index']);
 Route::post('admin/login',[AdminController::class, 'submit_login']);
+Route::get('admin/register',[AdminController::class, 'register']);

@@ -1,0 +1,25 @@
+.Login {
+    background-color: #ffffff; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.formsss{
+    background-color: rgb(240, 240, 240);
+    padding: 50px;
+}
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.headerlogin{
+    display: flex;
+    background-color: blue;
+
+}
