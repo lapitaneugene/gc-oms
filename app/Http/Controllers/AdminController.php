@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Admin;
 
 class AdminController extends Controller
 {
@@ -14,5 +15,17 @@ class AdminController extends Controller
     // Login
     public function login(){
         return view('login');
+    }
+
+    // Submit Login
+    public function submit_login(Request $request){
+        $request->valdiate([
+            'username' => 'requires',
+            'password' => 'required'
+        ]);
+        $checkAdmin = Admin::where(['username'=>$request->username,'password'=>$request->password])->count();
+        if ($checkAdmin > 0){
+            return redirect('admin');
+        }
     }
 }
